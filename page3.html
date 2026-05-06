@@ -9,16 +9,11 @@
 <head>
 
     <style>
-        body {
-            background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+        body{
+            background: url("background.startwars.png") no-repeat center center/cover;
             font-family: 'Segoe UI', sans-serif;
             color: white;
-        }
         
-        .container{
-          background-image: url("background.startwars.png");
-          background-size: cover;
-          background-position: center;
         }
         /* Top bar */
         .topbar {
@@ -115,7 +110,6 @@
     border: 2px solid #00c6ff;
 }
     </style>
-</head>
 <body>
 
 <!-- TOP BAR -->
@@ -161,6 +155,11 @@
         </div>
     </div>
 
+  </div>
+    <div class="section-title">Minor Subjects</div>
+    <div class="row g-3">
+
+
 <div class="section-title">Assigned Activity</div>
 
 <div class="row g-3">
@@ -189,6 +188,7 @@
     </div>
 </div>
 
+
     </div>
     </div>
 </div>
@@ -199,7 +199,6 @@
 </footer>
 
 <script>
-
     // Function to open Home
     function openNote(subject) {
         alert("📖 Opening " + subject + " notebook...");

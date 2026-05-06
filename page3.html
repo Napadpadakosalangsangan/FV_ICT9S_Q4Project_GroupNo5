@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+        }
+
+        /* Top bar */
+        .topbar {
+            background: #111;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #444;
+        }
+
+        .topbar h5 {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section titles */
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-left: 5px solid #00c6ff;
+            padding-left: 10px;
+            font-weight: bold;
+        }
+
+        /* Notebook cards */
+        .note-card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 20px;
+            transition: 0.3s;
+            border: 1px solid #444;
+        }
+
+        .note-card:hover {
+            transform: translateY(-5px);
+            border-color: #00c6ff;
+        }
+
+        .note-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .note-info {
+            font-size: 0.85rem;
+            color: #bbb;
+        }
+
+        .open-btn {
+            margin-top: 10px;
+            background: #00c6ff;
+            border: none;
+            color: black;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 5px 15px;
+        }
+
+        .open-btn:hover {
+            background: #0099cc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+            background: #111;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <h5>📓 Mandelorian High</h5>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Subjects</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <h2 class="text-center mt-4">Your Subjects</h2>
+
+    <!-- HOME -->
+    <div class="section-title">Home</div>
+    <div class="row g-3">
+        <div class="col-md-6">
+            <div class="note-card">
+                <div class="note-title">Homeroom</div>
+                <div class="note-info">Adviser: Ms. Francisco</div>
+                <button class="open-btn" onclick="openNote('Homeroom')">Open</button>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="note-card">
+                <div class="note-title">Library</div>
+                <div class="note-info">Instructor: Ms. Jose</div>
+                <button class="open-btn" onclick="openNote('Library')">Open</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAJOR -->
+    <div class="section-title">Major Subjects</div>
+    <div class="row g-3">
+
+        <div class="col-md-4">
+            <div class="note-card">
+                <div class="note-title">Science</div>
+                <div class="note-info">Ms. Mendaro</div>
+                <button class="open-btn" onclick="openNote('Science')">Open</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="note-card">
+                <div class="note-title">English</div>
+                <div class="note-info">Ms. Avila</div>
+                <button class="open-btn" onclick="openNote('English')">Open</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="note-card">
+                <div class="note-title">Math</div>
+                <div class="note-info">Mr. Verba</div>
+                <button class="open-btn" onclick="openNote('Math')">Open</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MINOR -->
+    <div class="section-title">Minor Subjects</div>
+    <div class="row g-3">
+
+        <div class="col-md-4">
+            <div class="note-card">
+                <div class="note-title">ICT</div>
+                <div class="note-info">Mr. Santos</div>
+                <button class="open-btn" onclick="openNote('ICT')">Open</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="note-card">
+                <div class="note-title">PE & Health</div>
+                <div class="note-info">Mr. Cases</div>
+                <button class="open-btn" onclick="openNote('PE & Health')">Open</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="note-card">
+                <div class="note-title">Values</div>
+                <div class="note-info">Mr. Buntile</div>
+                <button class="open-btn" onclick="openNote('Values')">Open</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    Dusrin Skiba T. Cunanan | 9-Sapphire ©2026
+</footer>
+
+<script>
+    // Function to open notebook
+    function openNote(subject) {
+        alert("📖 Opening " + subject + " notebook...");
+    }
+
+    // Logout function
+    function logout() {
+        let confirmLogout = confirm("Are you sure you want to logout?");
+        if (confirmLogout) {
+            window.location.href = "index.html";
+        }
+    }
+</script>
+</body>
+</html>

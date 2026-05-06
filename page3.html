@@ -106,16 +106,54 @@
 
     <div class="nav-links">
         <a href="#">Home</a>
-        <a href="#">Subjects</a>
+        <a href="#" onclick="subjects()">Subjects</a>
         <a href="#" onclick="logout()">Logout</a>
     </div>
 </div>
 
 <div class="container">
 
-    <h2 class="text-center mt-4">Home Page</h2>
+    <h2 class="text-center mt-4">Your Subjects</h2>
 
+    <!-- HOME -->
+    <div class="section-title">Home</div>
+    <div class="row g-3">
+        <div class="col-md-6">
+            <div class="note-card">
+                <div class="note-title">Homeroom</div>
+                <div class="note-info">Adviser: Ms. Francisco</div>
+                <button class="open-btn" onclick="openNote('Homeroom')">Open</button>
+            </div>
+        </div>
 
+        <div class="col-md-6">
+            <div class="note-card">
+                <div class="note-title">Library</div>
+                <div class="note-info">Instructor: Ms. Jose</div>
+                <button class="open-btn" onclick="openNote('Library')">Open</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAJOR -->
+    <div class="section-title">Major Subjects</div>
+    <div class="row g-3">
+
+        <div class="col-md-4">
+            <div class="note-card">
+                <div class="note-title">Science</div>
+                <div class="note-info">Ms. Mendaro</div>
+                <button class="open-btn" onclick="openNote('Science')">Open</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="note-card">
+                <div class="note-title">English</div>
+                <div class="note-info">Ms. Avila</div>
+                <button class="open-btn" onclick="openNote('English')">Open</button>
+            </div>
+        </div>
 
 
 </div>
@@ -126,6 +164,10 @@
 
 <script>
 
+  function subjects(){
+    window.location.href = "page2.html";
+
+  }
     // Logout function
     function logout() {
         let confirmLogout = confirm("Are you sure you want to logout?");

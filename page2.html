@@ -104,7 +104,7 @@
     <h5>📓 Mandelorian High</h5>
 
     <div class="nav-links">
-        <a href="#">Home</a>
+        <a href="#" onclick="home()">Home</a>
         <a href="#">Subjects</a>
         <a href="#" onclick="logout()">Logout</a>
     </div>
@@ -204,6 +204,12 @@
     // Function to open notebook
     function openNote(subject) {
         alert("📖 Opening " + subject + " notebook...");
+    }
+
+    function home(){
+        window.location.href = "page3.html";
+
+
     }
 
     // Logout function

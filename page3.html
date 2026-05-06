@@ -10,109 +10,100 @@
 
     <style>
         body{
-            background: linear-gradient(to right, #1f1f1f, #2c2c2c);
-            font-family: 'Segoe UI', sans-serif;
-            color: white;
+          background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+          font-family: 'Segoe UI', sans-serif;
+          color: white;
         
         }
-        /* Top bar */
-        .topbar {
-            background: #111;
-            padding: 15px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #444;
+
+        .topbar{
+          background: #111;
+          padding: 15px 25px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 2px solid #444;
         }
 
-        .topbar h5 {
-            margin: 0;
-            font-weight: bold;
+        .topbar h5{
+          margin: 0;
+          font-weight: bold;
         }
 
-        .nav-links a {
-            color: white;
-            margin-left: 15px;
-            text-decoration: none;
-            font-size: 14px;
+        .nav-links a{
+          color: white;
+          margin-left: 15px;
+          text-decoration: none;
+          font-size: 14px;
         }
 
-        .nav-links a:hover {
-            text-decoration: underline;
+        .nav-links a:hover{
+        text-decoration: underline;
         }
 
-        /* Section titles */
-        .section-title {
-            margin-top: 40px;
-            margin-bottom: 15px;
-            border-left: 5px solid #00c6ff;
-            padding-left: 10px;
-            font-weight: bold;
+        .section-title{
+          margin-top: 40px;
+          margin-bottom: 15px;
+          border-left: 5px solid #00c6ff;
+          padding-left: 10px;
+          font-weight: bold;
         }
 
-        /* Notebook cards */
-        .note-card {
-            background: #1a1a1a;
-            border-radius: 12px;
-            padding: 20px;
-            transition: 0.3s;
-            border: 1px solid #444;
+        .note-card{
+          background: #1a1a1a;
+          border-radius: 12px;
+          padding: 20px;
+          transition: 0.3s;
+          border: 1px solid #444;
         }
 
-        .note-card:hover {
-            transform: translateY(-5px);
-            border-color: #00c6ff;
+        .note-card:hover{
+          transform: translateY(-5px);
+          border-color: #00c6ff;
         }
 
-        .note-title {
-            font-size: 1.3rem;
-            font-weight: bold;
+        .note-title{
+          font-size: 1.3rem;
+          font-weight: bold;
         }
 
-        .note-info {
-            font-size: 0.85rem;
-            color: #bbb;
+        .note-info{
+          font-size: 0.85rem;
+          color: #bbb;
         }
 
-        .open-btn {
-            margin-top: 10px;
-            background: #00c6ff;
-            border: none;
-            color: black;
-            font-weight: bold;
-            border-radius: 8px;
-            padding: 5px 15px;
+        .open-btn{
+          margin-top: 10px;
+          background: #00c6ff;
+          border: none;
+          color: black;
+          font-weight: bold;
+          border-radius: 8px;
+          padding: 5px 15px;
         }
 
-        .open-btn:hover {
-            background: #0099cc;
+        .open-btn:hover{
+          background: #0099cc;
         }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            margin-top: 40px;
-            background: #111;
-            font-size: 13px;
+        footer{
+          text-align: center;
+          padding: 10px;
+          margin-top: 40px;
+          background: #111;
+          font-size: 13px;
         }
 
-    .logo {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.profile-img {
-    width: 100%;
-    max-width: 200px;
-    border-radius: 12px;
-    object-fit: cover;
-    border: 2px solid #00c6ff;
-}
+        .logo{
+          width: 30px;
+          height: 30px;
+          object-fit: cover;
+          border-radius: 50%; 
+        }
     </style>
+</head>
 <body>
 
-<!-- TOP BAR -->
 <div class="topbar">
      
     <div class="title-group">
@@ -127,97 +118,55 @@
         <a href="#" onclick="logout()">Logout</a>
     </div>
 </div>
-<<<<<<< HEAD
-=======
-    <div class="row g-3">
-        <div>
 
-    </div>
-    </div>
+<!---->
 
- 
-<div class="section-title">Profile</div>
-
+<h4 class="section-title">My Courses</h4>
 <div class="row g-3">
-    <div class="col-md-4">
-        <div class="note-card text-center">
-            <img src="https://i.pinimg.com/1200x/d0/78/f6/d078f6b8ade2d618c1e6717b1efc5c29.jpg" 
-                 class="profile-img mb-3">
 
-            <div class="note-title">You</div>
-            <div class="note-info">Mandelorian</div>
-        </div>
-    </div>
-    <div>
-        <div>
-    <div class="col-md-6">
-        <div class="note-card text-center">
-            <h5>⚔️Calendar</h5>
-            <input type="date" class="form-control mt-3">
-        </div>
-    </div>
-
+<div class="col-md-4">
+  <div class="note-card">
+    <div class="note-title">UX Fundamentals</div>
+    <div class="note-info">8/24 lessons</div>
+    <button class="open-btn">Continue</button>
   </div>
-    <div class="section-title">Minor Subjects</div>
-    <div class="row g-3">
-
-
-<div class="section-title">Assigned Activity</div>
-
-<div class="row g-3">
-    <div class="col-md-4">
-        <div class="note-card">
-            <div class="note-title">📘 Activity 1</div>
-            <div class="note-info">Laboratory Worksheet</div>
-            <button class="open-btn" onclick="openNote('Activity 1')">Open</button>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="note-card">
-            <div class="note-title">📝 Activity 2</div>
-            <div class="note-info">Submit ICT Project</div>
-            <button class="open-btn" onclick="openNote('Activity 2')">Open</button>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="note-card">
-            <div class="note-title">💻 Activity 3</div>
-            <div class="note-info">Submit Math Quiz</div>
-            <button class="open-btn" onclick="openNote('Activity 3')">Open</button>
-        </div>
-    </div>
 </div>
 
-
-    </div>
-    </div>
+<div class="col-md-4">
+  <div class="note-card">
+    <div class="note-title">Startup Finance</div>
+    <div class="note-info">15/30 lessons</div>
+    <button class="open-btn">Continue</button>
+  </div>
 </div>
->>>>>>> 2c222b3b704a8b9ecb1bb2d841e01f7d7fa1a8ae
+
+<div class="col-md-4">
+  <div class="note-card">
+    <div class="note-title">Conversational Spanish</div>
+    <div class="note-info">18/22 lessons</div>
+    <button class="open-btn">Continue</button>
+  </div>
+</div>
+
+</div>
 
 
 <footer>
-    Group 5 (Buan, Cunanan, & Salangsang) | 9-Sapphire ©2026
+  Group 5 (Buan, Cunanan, & Salangsang) | 9-Sapphire ©2026
 </footer>
 
-<script>
-    // Function to open Home
-    function openNote(subject) {
-        alert("📖 Opening " + subject + " notebook...");
+  <script>
+ 
+    function subjects(){
+      window.location.href = "page2.html";
     }
 
-  function subjects(){
-    window.location.href = "page2.html";
-
-  }
-    // Logout function
     function logout() {
-        let confirmLogout = confirm("Are you sure you want to logout?");
-        if (confirmLogout) {
-            window.location.href = "index.html";
-        }
+      let confirmLogout = confirm("Are you sure you want to logout?");
+      if (confirmLogout) {
+        window.location.href = "index.html";
+      }
     }
-</script>
+  </script>
 </body>
 </html>

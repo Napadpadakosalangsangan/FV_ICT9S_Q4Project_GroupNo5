@@ -73,7 +73,7 @@
         }
 
         .open-btn{
-          margin-top: 10px;
+          margin-top: 5px;
           background: #00c6ff;
           border: none;
           color: black;
@@ -84,6 +84,21 @@
 
         .open-btn:hover{
           background: #0099cc;
+        }
+        
+        .priority-box{
+          width: 800px;
+        }
+        .priorities {
+          background: #1a1a1a;
+          color: #bbb;
+          border-radius: 12px;
+          padding: 20px;
+          transition: 0.3s;
+          border: 1px solid #444;
+          width: 400px;
+          margin: 0 auto;
+
         }
 
         footer{
@@ -127,36 +142,78 @@
 <div class="col-md-4">
   <div class="note-card">
     <div class="note-title">Projects</div>
-    <div class="note-info">Priority : "Raise your Yoda" June 6, 2026</div>
-    <button class="open-btn">See more</button>
+    <div class="note-info">Instructor : Unknown</div>
+    <button class="open-btn" onclick="openNote('project')">See more</button>
   </div>
 </div>
 
 <div class="col-md-4">
   <div class="note-card">
     <div class="note-title">Saber Drills </div>
-    <div class="note-info">Priority : "360 degree spin" May 10, 2026</div>
-    <button class="open-btn">See more</button>
+    <div class="note-info">Instructor: Yoda's Grand Daughter</div>
+    <button class="open-btn" onclick="openNote('saber drill')">See more</button>
   </div>
 </div>
 
 <div class="col-md-4">
   <div class="note-card">
-    <div class="note-title">Spaceship Recordings</div>
-    <div class="note-info">Priority : "Fly fly July" 23, 2026</div>
-    <button class="open-btn">See more</button>
+    <div class="note-title">Space Travel</div>
+    <div class="note-info">Instructor:  Doctor Strange </div>
+    <button class="open-btn" onclick="openNote('space travel')">See more</button>
   </div>
 </div>
-
 </div>
 
+<!---->
 
+<div class="row mt-4 priority-box">
+
+  <div class="col-md-8">
+    <h4 class="section-title">Priorities</h4>
+
+    <div class="note-card">
+      <button class="d-flex justify-content-between border-bottom py-2 priorities" onclick="priority('Wormhole D10')">
+        <span>Wormhole D10</span>
+        <span class="note-info">5:30 PM</span>
+      </button>
+
+      <button class="d-flex justify-content-between border-bottom py-2 priorities" onclick="priority('420° Spin Challenge')">
+        <span>420° Spin Challenge</span>
+        <span class="note-info">11:59 PM</span>
+      </button>
+
+      <button class="d-flex justify-content-between border-bottom py-2 priorities" onclick="priority('Raise your own Baby Yoda')">
+        <span>Raise your own Baby Yoda</span>
+        <span class="note-info">3 Days left</span>
+      </button>
+
+      <button class="d-flex justify-content-between border-bottom py-2 priorities" onclick="priority('Build an Assistant')">
+        <span>Build an Assistant</span>
+        <span class="note-info">6 Days left</span>
+      </button>
+
+      <button class="d-flex justify-content-between border-bottom py-2 priorities" onclick="priority('Cloth Weaving')">
+          <span>Cloth Weaving</span>
+          <span class="note-info">2 Weeks Left</span>
+      </button>
+    </div>
+  </div>
+
+</div>
 <footer>
   Group 5 (Buan, Cunanan, & Salangsang) | 9-Sapphire ©2026
 </footer>
 
   <script>
  
+    function openNote(submission) {
+      alert("📖 Opening " + submission + " submissions...");
+    }
+
+    function priority(task){
+      alert("📖 Opening " + task);
+    }
+
     function subjects(){
       window.location.href = "page2.html";
     }
